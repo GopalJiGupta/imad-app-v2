@@ -14,19 +14,19 @@ app.get('/artical-one', function (req, res){
 });
 
 app.get('/artical-two', function (req, res){
-   res.send('this is artical-Two responce Thank you!!'); 
+   res.sendFile(path.join(__dirname, 'ui', 'artical-two.html')); 
 });
 
 app.get('/artical-three', function (req, res){
-   res.send('this is artical-Three responce Thank you!!'); 
+   res.sendFile(path.join(__dirname, 'ui', 'artical-three.html')); 
 });
 
 app.get('/artical-four', function (req, res){
-   res.send('this is artical-Four responce Thank you!!'); 
+   res.sendFile(path.join(__dirname, 'ui', 'artical-four.html')); 
 });
 
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
