@@ -21,7 +21,7 @@ var articals={
             </p>`
 },
     'artical-two': {
-         title: 'gopal second artical',
+    title: 'gopal second artical',
     heading: 'my second artical',
     date: 'feb 10, 2017',
     contain: ` <p>
@@ -69,7 +69,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articalname',function(req, res){
-    var articalname= req.params.articalname;
+   // var articalname= req.params.articalname;
    res.send(createTemplet(articals[articalname])); 
 });
 
