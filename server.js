@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articalOne={  
+var articals={
+    articalOne: {  
     title: 'gopal first artical',
     heading: 'my artical',
     date: '2/2/2017',
@@ -18,6 +19,14 @@ var articalOne={
             <p>
                 My name is Gopal ji gupta and i am hardworker and selfmotivater.My name is Gopal ji gupta and i am hardworker and selfmotivater.My name is Gopal ji gupta and i am hardworker and selfmotivater.My name is Gopal ji gupta and i am hardworker and selfmotivater.
             </p>`
+},
+    articaltwo: {
+         title: 'gopal second artical',
+    heading: 'my second artical',
+    date: 'feb 10, 2017',
+    contain: ` <p>
+                My name is Gopal ji gupta and i am hardworker and selfmotivater.`
+    }
 };
 
 function createTemplet(data)
