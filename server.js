@@ -60,7 +60,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/artical-one',function(req, res){
-   res.sendfile(createTemplet(articalOne)); 
+   res.send(createTemplet(articalOne)); 
 });
 
 app.get('/ui/style.css', function (req, res) {
