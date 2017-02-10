@@ -69,13 +69,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articalname',function(req, res){
-   // var articalname= req.params.articalname;
+    var articalname= req.params.articalname;
    res.send(createTemplet(articals[articalname])); 
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
-});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
