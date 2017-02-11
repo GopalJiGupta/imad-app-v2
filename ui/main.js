@@ -11,7 +11,7 @@ element.innerHTML = 'Hi! I am Gopal and i am a begginer of this course(nodejs). 
 var img = document.getElementById('jimg');
 var marginLeft = 0;
 function moveRight(){
-    marginLeft = marginLeft + 10;
+    marginLeft = marginLeft + 5;
     img.style.marginLeft= marginLeft + 'px';
 }
 
