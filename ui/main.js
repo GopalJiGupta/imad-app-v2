@@ -9,6 +9,13 @@ element.innerHTML = 'Hi! I am Gopal and i am a begginer of this course(nodejs). 
 //chaning Image
 
 var img = document.getElementById('jimg');
+var marginLeft = 0;
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft= marginLeft + 'px';
+}
+
 img.onclick = function(){
-    img.style.marginLeft= '100px'; 
+    var interval = setInterval(moveRight,100);
+     
 }; 
