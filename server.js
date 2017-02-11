@@ -65,7 +65,7 @@ return htmltemplet;
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'test.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/:articalname',function(req, res){
