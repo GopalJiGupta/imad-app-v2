@@ -73,6 +73,10 @@ app.get('/:articalname',function(req, res){
    res.send(createTemplet(articals[articalname])); 
 });
 
+app.get('/ui/style.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
