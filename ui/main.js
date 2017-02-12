@@ -49,6 +49,3 @@ var submitbt = document.getElementById('submit_bt');
     request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
-
-   
- };
