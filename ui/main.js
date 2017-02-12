@@ -17,6 +17,6 @@ button.onclick = function(){
       }  
     };
     //make the request 
-    request.open('GET', 'http//http://gopaljigupta.imad.hasura-app.io/counter', true);
-    request.send();
+    request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
