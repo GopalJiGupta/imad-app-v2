@@ -20,3 +20,21 @@ button.onclick = function(){
     request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/counter', true);
     request.send(null);
 };
+
+//submit 
+
+var nameinput = document.getElementById('name');
+var name = nameinput.value();
+var submitbt = document.getElementById('submit_bt');
+ submitbt.onclick = function () {
+   //make a request to the server and send name
+   //caputure the list and rander with list
+   var names = ['name1','name2','name3','name4'];
+   var list = '';
+   for(var i =0; i<names.length; i++)
+   {
+       list += '<li>' + names[i] + '</li>';
+   }
+   var  ul = document.getElementById(namelist);
+   ul.innerHTML = list;
+ };
