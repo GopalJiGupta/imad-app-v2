@@ -75,6 +75,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var names = [];
+app.get('/submit-name/:name', function (req, res){
+    
+    //get name from the request
+    var name= req.query.name;
+    names.push(name);
+    //JSON : javascript object notation
+    res.send(JSON.stringify(names));
+    
+});
+
+
 app.get('/:articalname',function(req, res){
     var articalname= req.params.articalname;
    res.send(createTemplet(articals[articalname])); 
@@ -93,16 +105,6 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var names = [];
-app.get('/submit-name/:name', function (req, res){
-    
-    //get name from the request
-    var name= req.params.name;
-    names.push(name);
-    //JSON : javascript object notation
-    res.send(JSON.stringify(names));
-    
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
