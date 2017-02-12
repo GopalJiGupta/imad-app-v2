@@ -23,8 +23,7 @@ button.onclick = function(){
 
 //submit 
 
-var nameinput = document.getElementById('name');
-var name = nameinput.value;
+
 var submitbt = document.getElementById('submit_bt');
  submitbt.onclick = function () {
     //create a request
@@ -45,7 +44,10 @@ var submitbt = document.getElementById('submit_bt');
           }
       }  
     };
-    //make the request 
+    
+    var nameinput = document.getElementById('name');
+    var name = nameinput.value;
+      //make the request 
     request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
