@@ -93,12 +93,11 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var name = [];
+var names = [];
 app.get('/submit-name/:name', function (req, res){
     
     //get name from the request
     var name= req.params.name;
-    var name;
     names.push(name);
     //JSON : javascript object notation
     res.send(JSON.stringify(names));
