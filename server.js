@@ -79,7 +79,7 @@ var names = [];
 app.get('/submit-name/:name', function (req, res){
     
     //get name from the request
-    var name= req.query.name;
+    var name= req.params.name;
     names.push(name);
     //JSON : javascript object notation
     res.send(JSON.stringify(names));
