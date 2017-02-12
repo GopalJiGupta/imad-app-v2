@@ -46,6 +46,6 @@ var submitbt = document.getElementById('submit_bt');
       }  
     };
     //make the request 
-    request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.open('GET', 'http://gopaljigupta.imad.hasura-app.io/submit-name=' + name, true);
     request.send(null);
 };
