@@ -44,7 +44,7 @@ function createTemplet(data)
      <link href="/ui/style.css" rel="stylesheet" />
     </head>
      <body>
-        <div class="container,center ">
+        <div class="container, center ">
         <div>
             <a href="/">Home</a>
         </div>
